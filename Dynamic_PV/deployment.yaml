@@ -16,14 +16,14 @@ spec:
         tier: frontend
     spec:
       volumes:
-        - Name: Newvolume
+        - name: newvolume
           persistentVolumeClaim: 
             claimName: bussapp-vol-pvc
       containers:
         - name: busapp
           image: learnitguide/busapp:1.0
           volumeMounts:
-          - name: Newvolume
+          - name: newvolume
             mountPath: "/tmp/data"
           ports:
             - containerPort: 8001
