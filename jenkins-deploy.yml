@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: jenkins-master
-          image: <account-id>.dkr.ecr.eu-central-1.amazonaws.com/jenkins/master
+          image: jenkins/jenkins:lts                          # <account-id>.dkr.ecr.eu-central-1.amazonaws.com/jenkins/master
           imagePullPolicy: Always
           env:
             - name: JAVA_OPTS
