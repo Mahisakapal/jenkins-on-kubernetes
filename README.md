@@ -1,5 +1,7 @@
 # jenkins-on-kubernetes
 # jenkins dynamic agent on k8s check document file attached 
+## to create ebs use below cmd 
+'''aws ec2 create-volume --availability-zone=ap-south-1 --size=5 --volume-type=gp2'''
 1. Replace all instances of <account-id> with your AWS account ID.
 2. Feel free to add or remove variables defined in the ```environment {}``` block inside Jenkinsfile
 3. Jenkinsfile is just a template and can be customised as per your application/environment. It's a very fundamental blueprint of a CI/CD pipeline
